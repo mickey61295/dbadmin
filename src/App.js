@@ -15,7 +15,6 @@ import Usersedit from './Users/usersEdit'
 import Products from './Products/Products'
 import Productscreate from './Products/ProductCreate'
 import Productsedit from './Products/ProductsEdit'
-import Footer from './Component/Footer'
 
 function App() {
 	return (
@@ -67,7 +66,6 @@ function App() {
 								</Switch>
 							</UserProvider>
 						</div>
-						<Footer></Footer>
 					</div>
 				</div>
 			</Router>
