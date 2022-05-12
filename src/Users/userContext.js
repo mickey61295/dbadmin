@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, createContext } from 'react'
 
-let userContext = React.createContext()
+let userContext = createContext()
 
 export default userContext
 
@@ -8,32 +8,32 @@ export default userContext
 export const UserProvider = ({ children }) => {
 	let [userData, setUserData] = useState([
 		{
-			firstName: 'Tiger Nixon',
-			position: 'System Architect',
-			Office: 'Edinburgh',
-			Age: '61',
-			Date: '2011-04-25',
-			Salary: 320800,
+			firstName: 'Person 1',
+			position: 'Architect',
+			Office: 'Bangalore',
+			Age: '24',
+			Date: '2019-01-01',
+			Salary: 336000,
 		},
 		{
-			firstName: 'Garrett Winters',
-			position: 'Accountant',
-			Office: 'Tokyo',
-			Age: '63',
-			Date: '2011-07-25',
-			Salary: 170750,
+			firstName: 'Person 2',
+			position: 'Architect',
+			Office: 'Bangalore',
+			Age: '24',
+			Date: '2019-01-01',
+			Salary: 336000,
 		},
 	])
 	let [productData, setProductData] = useState([
 		{
-			Name: 'Desktop',
+			Name: 'Gaming Desktop',
 			Category: 'IT',
-			Price: 200,
+			Price: 120000,
 		},
 		{
-			Name: 'Laptop',
+			Name: 'Office Laptop',
 			Category: 'IT',
-			Price: 3000,
+			Price: 30000,
 		},
 	])
 	return (
